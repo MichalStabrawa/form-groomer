@@ -1,0 +1,142 @@
+/*nav style*/
+
+.nav-tabs .nav-link {
+    color: hotpink;
+}
+
+
+/*header style*/
+
+.jumbotron {
+    background-color: black;
+    color: pink;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: 34px;
+}
+
+.btn {
+     margin-top:15px;
+    background:pink;
+    border:none;
+}
+.btn:hover{
+    background: #000;
+    transition:0.3s;
+}
+
+.col {
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 5px;
+    background: transparent;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.btn {
+    margin-top: .5rem;
+}
+
+.form-control {
+    border: 1px solid pink;
+}
+
+
+/*data-customer style*/
+
+.data-customer {
+    display: none;
+}
+
+.data-customer h3 {
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+}
+
+.data-customer form .form-control {
+    background: pink;
+}
+
+.price-div {
+    margin-top: 1rem;
+}
+
+.price-div input {
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    border: 0px;
+    height: 34px;
+}
+
+footer {
+    margin-top: 30px;
+    height: 12vh;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer a:hover {
+    color: pink;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .fa {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+
+/*popUp*/
+
+#popUp {
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: black;
+    color: deeppink;
+    display: none;
+}
+
+#popUp .hide-popUp {
+    color: pink;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+}
+
+#popUp .fa {
+    color: #fff;
+}
+
+
+/*cennik.html style*/
+
+.price::after {
+    content: "";
+    display: block;
+    border: .5px solid #eeeeee;
+}
+
+.price th {
+    color: pink;
+}

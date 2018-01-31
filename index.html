@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form groomer salon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--datapicker-->
+     <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="bootstrap-4.0.0-beta.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!--nav-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Rezerwacje</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="cennik.html">Cennik</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="kontakt.html">Kontakt</a>
+        </li>
+
+    </ul>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Rezerwacja Online</h1>
+            <p class="lead">Zarezerwuj wizytę w Salonie Strzyżenia dla Psów dla twojego psa online. Wypełnij formularz </p>
+        </div>
+    </div>
+    <div class="container">
+
+    </div>
+
+    <!--form
+-->
+    <div class="class container" id="form">
+        <div class="class row">
+            <div class="class col-md-12">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <!--name-->
+                            <label for="exampleFormControlInput1">Imie</label>
+                            <input type="text" class="form-control" placeholder="First name" id="name" required>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <!--surname-->
+                            <label for="exampleFormControlInput1">Nazwisko</label>
+                            <input type="text" class="form-control" placeholder="Last name" id="surname" required>
+                        </div>
+                    </div>
+                    <div class="class row">
+                        <div class="col-md-6 col-sm-12">
+                            <!--exampleFormControlInput1-->
+                            <label for="exampleFormControlInput1">Email address</label>
+                            <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <!--phone-->
+                            <label for="exampleFormControlInput1">Telefon</label>
+                            <input type="number" class="form-control" id="phone" placeholder="500500500" id="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="class row">
+                        <div class="col-md-6 col-sm-12">
+                            <!--size-->
+                            <label for="exampleFormControlSelect1">Wielkość psa</label>
+                            <select class="form-control " id="size" required>
+
+                                <option value="do 5kg">rasy małe</option>
+                                <option value="od 5kg-10kg">rasy średnie</option>
+                                <option value="od 10kg-15kg">rasy duże</option>
+                                
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+
+                            <label for="exampleFormControlSelect1">Rasa psa</label>
+                            <!--whatsDog-->
+                            <select class="form-control" id="whatsDog" required>
+                                <option valu="york">york</option>
+                                <option value="maltańczyk">maltańczyk</option>
+                                <option value="shih-tzu">shih-tzu</option>
+                                <option value="sznaucer">sznaucer</option>
+                                <option value="szpic">szpic</option>
+                                <option value="papylon">papylon</option>
+                                <option value="bieawer">bieawer</option>
+                                <option value="terrier">terrier</option>
+                                <option value="inna rasa">inny</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <div class=" row">
+                        <div class="col-md-6 col-sm-12">
+                            <label for="exampleFormControlSelect1">Rodzaj usługi</label>
+                            <!--howHair-->
+                            <select class="form-control " id="dogService" required>
+
+                                <option value="value1">kąpiel + strzyżenie</option>
+                                <option value="value2">kąpiel</option>
+                                <option value="value3">rozczesywanie</option>
+                                <option value="value4">trymowanie</option>
+                                <option value="value5">inne</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+
+                            <label for="exampleFormControlSelect1">Preferowana godzina</label>
+                            <!--dayTime-->
+                            <select class="form-control" id="dayTime" required>
+
+                                <option value="od 10-12"> od 10-12</option>
+                                <option value="od-12 do 15">od 12-15</option>
+                                <option value="od-15 do 18">od 15-18</option>
+                                <option value="od 18 do 20">od 18-20</option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary" id="submitData">Wyślij</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--form 2 submit -->
+    <section class="data-customer" id="data-custome">
+        <div class="container">
+            <div class="class row">
+                <div class=" col-md-12">
+                    <div class="page-header">
+                        <h1>Dziękujemy za rezerwację <small>Sprawdź poprawność wpowadzanych danych i zatwierdź</small></h1>
+                    </div>
+
+
+                    <!--form new-->
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlInput1">Imie</label>
+                                <input type="text" class="form-control" placeholder="First name" id="name1">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlInput1">Nazwisko</label>
+                                <input type="text" class="form-control" placeholder="Last name" id="surname1">
+                            </div>
+                        </div>
+                        <div class="class row">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlInput1">Email address</label>
+                                <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlInput">Telefon</label>
+                                <input type="number" class="form-control" id="phone1">
+                            </div>
+                        </div>
+
+                        <div class="class row">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlSelect1">Wielkość psa</label>
+                                <!--size2-->
+                                <select class="form-control " id="size2">
+
+                                    <option value="do 5kg">rasy małe</option>
+                                    <option value="od 5kg-10kg">rasy średnie</option>
+                                    <option value="od 10kg-15kg">rasy duże</option>
+                                    
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+
+                                <label for="exampleFormControlSelect1">Rasa psa</label>
+                                <!--whatsDog1-->
+                                <select class="form-control" id="whatsDog1">
+                                    <option valu="york">york</option>
+                                    <option value="maltańczyk">maltańczyk</option>
+                                    <option value="shih-tzu">shih-tzu</option>
+                                    <option value="sznaucer">sznaucer</option>
+                                    <option value="szpic">szpic</option>
+                                    <option value="papylon">papylon</option>
+                                    <option value="bieawer">bieawer</option>
+                                    <option value="terrier">terrier</option>
+                                    <option value="inna rasa">inny</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class=" row">
+                            <div class="col-md-6 col-sm-12">
+                                <label for="exampleFormControlSelect1">Rodzaj usługi</label>
+                                <!--howHair-->
+                                <select class="form-control " id="servicess">
+
+                                    <option value="value1">kąpiel + strzyżenie</option>
+                                    <option value="value2">kąpiel</option>
+                                    <option value="value3">rozczesywanie</option>
+                                    <option value="value4">trymowanie</option>
+                                    <option value="value5">inne</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+
+                                <label for="exampleFormControlSelect1">Preferowana godzina</label>
+                                <!--dayTime-->
+                                <select class="form-control" id="timeDog">
+
+                                    <option value="od 10-12"> od 10-12</option>
+                                    <option value="od-12 do 15">od 12-15</option>
+                                    <option value="od-15 do 18">od 15-18</option>
+                                    <option value="od 18 do 20">od 18-20</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row price-div">
+                            <div class="col-md-6 ">
+
+                                <button type="submit" id="form-submit">Zatwierdz</button>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="">Przybliżony koszt usługi</label>
+                                <input type="text" id=test11 value="cena">
+                            </div>
+                        </div>
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+<!-footer->
+    <footer>
+        <div class="container">
+           
+            <div class="row">
+
+                <div class="col-md-6"><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></div>
+              <div class="col-md-6"><a href=""><i class="fa fa-copyright" aria-hidden="true"></i>Projekt i realizacja M.Stabrawa</a></div>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+<!--popUp-->
+    <div id="popUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3><i class="fa fa-share-square" aria-hidden="true"></i></h3>
+                    <h3>Twoja rezerwacja została wysłana</h3>
+                    <p>Skontaktujemy się z Tobą w przeciągu 24h podając najbliższe wolne terminy </p>
+
+
+                </div>
+            </div>
+        </div>
+        <button class="hide-popUp" id="hidePop">X</button>
+    </div>
+
+
+ 
+
+
+
+
+<script src="jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-4.0.0-beta.3/dist/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
